@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src:url('/fonts/Roboto/Roboto-Regular.ttf');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:'Exo2';
+	src:url('/fonts/Exo_2/Exo2-Regular.ttf');
+	font-weight: normal;
+    font-style: normal;
+};
+@font-face {
+	font-family:'Exo2';
+	src:url('/fonts/Exo_2/Exo2-SemiBold.ttf');
+	font-weight: bold;
+    font-style: normal;
+};
