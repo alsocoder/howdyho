@@ -16,3 +16,45 @@
 	font-weight: bold;
     font-style: normal;
 }
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (min-width: 1200px) {
+  .container {
+	width: 1170px;
+    max-width: 100%;
+  }
+}
+#page {
+    width:1350px;
+}
+.sidebar{
+    width: 216px;
+    position: absolute;
+    border-right:1px solid #a7a7a7;
+    background-color: #f3f3f3;
+    z-index: 1;
+}
+
+nav ul{
+    background-color: aquamarine;
+}
+.colored{
+    background-color: crimson;
+    background-clip: content-box;
+}
+.colored-1{
+    background-color: darkkhaki;
+}
+section.header{
+    background-color: #eaebed;
+    padding: 100px 0;
+}
+.content section{
+    padding:100px 0;
+    background-color: white;
+}
+.content section:nth-child(even){
+    background-color: #f3f3f3;
+}
