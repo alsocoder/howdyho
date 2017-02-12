@@ -5,6 +5,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Roboto';
+    src:url('fonts/Roboto/Roboto-Light.ttf');
+	font-weight: 100;
+    font-style: normal;
+}
+@font-face {
 	font-family:'Exo2';
 	src:url('fonts/Exo_2/Exo2-Regular.ttf');
 	font-weight: normal;
@@ -52,6 +58,7 @@ h1,h2,h3,h4,h5,h6,nav li{
 }
 .sidebar .desc{
     margin-top: 16px;
+    font-weight: 100;
 }
 .sidebar .nav {
     margin-top: 23px;
@@ -60,7 +67,28 @@ h1,h2,h3,h4,h5,h6,nav li{
     border-bottom:1px solid #a7a7a7;
 }
 .sidebar .nav-link{
-    padding: 1em;
+    color:#a7a7a7;
+    padding: 1em 0.4em;
+}
+.sidebar .active .nav-link{
+    color:inherit;
+}
+.sidebar .nav-link::before{
+    display: inline-block;
+    content: '-';
+    font-family: 'Exo2';
+    font-weight: bold;
+    color:#adbdf9;
+    transform: scale(2.5, 1);
+    margin-right:0.5em;
+}
+.sidebar .active .nav-link::before{
+    display: inline-block;
+    content: '-';
+    color:#7b9afc;
+    transform: scale(5, 1);
+    margin-right:1em;
+    margin-left: 0.3em;
 }
 section.header{
     background-color: #eaebed;
