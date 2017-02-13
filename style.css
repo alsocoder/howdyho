@@ -30,7 +30,10 @@ h1,h2,h3,h4,h5,h6,nav li{
     font-family: 'Exo2', 'Arial', sans;
     text-transform: uppercase;
 }
-
+a {color: #3971ff;}
+.accent-color{
+    color:#3971ff;
+}
 .row{
     margin-left: 0;
     margin-right: 0;
@@ -44,6 +47,7 @@ h1,h2,h3,h4,h5,h6,nav li{
 #page {
     width:1350px;
 }
+/*==========sidebar============*/
 .sidebar{
     width: 216px;
     position: absolute;
@@ -90,6 +94,8 @@ h1,h2,h3,h4,h5,h6,nav li{
     margin-right:1em;
     margin-left: 0.3em;
 }
+/*==========end sidebar============*/
+/*=============header==============*/
 section.header{
     background-color: #eaebed;
     background-image: url('img/header-bg.jpg');
@@ -97,18 +103,72 @@ section.header{
     background-repeat: no-repeat;
 /*    padding: 110px 0;*/
 }
-.header .photo{
-    text-align: center;
-}
+.header img.photo{}
 .header .content{
-    padding:95px 0;
-}
-.accent-color{
-    color:#3971ff;
+    padding:102px 0;
 }
 .header .content h1{
-    font-size: 30pt;
+    font-size: 3em;
 }
+.header .content h1 small{
+    display: block;
+    letter-spacing: -1px;
+    font-size: 66%;
+}
+.header .content .profession{
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    padding: 0 19px;
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    text-transform: uppercase;
+
+
+}
+.header .content p.desc{
+    margin-top: 42px;
+    line-height: 30px;
+    letter-spacing: 0.1pt;
+}
+.header .bottom{
+    margin-top: 37px;
+}
+.header .link-btn{
+    text-transform: uppercase;
+}
+.link-btn{
+    position: relative;
+    margin-right: 92px;
+    color: inherit;
+}
+.link-btn::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -12px;
+    width: 50px;
+    background-color: #3971ff;
+    height: 2px;
+}
+.link-btn:hover, .link-btn.active{
+    text-decoration: none;
+    color:#3971ff;
+}
+.link-btn:hover::after, .link-btn.active::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 150px;
+    background-color: #3971ff;
+    height: 2px;
+}
+/*=============end header==============*/
+/*================MAIN=================*/
 .main section{
     padding:100px 0;
     background-color: white;
