@@ -74,6 +74,10 @@ a {color: #3971ff;}
     color:#a7a7a7;
     padding: 1em 0.4em;
 }
+.sidebar .nav-link:hover{
+    color:inherit;
+    padding: 1em 0.4em;
+}
 .sidebar .active .nav-link{
     color:inherit;
 }
@@ -85,8 +89,9 @@ a {color: #3971ff;}
     color:#adbdf9;
     transform: scale(2.5, 1);
     margin-right:0.5em;
+    transition: all 0.3s ease 0.1s;
 }
-.sidebar .active .nav-link::before{
+.sidebar .nav-link:hover::before, .sidebar .active .nav-link::before{
     display: inline-block;
     content: '-';
     color:#7b9afc;
@@ -105,7 +110,7 @@ section.header{
 }
 .header img.photo{}
 .header .content{
-    padding:102px 0;
+    padding: 102px 0 118px 0;
 }
 .header .content h1{
     font-size: 3em;
@@ -153,6 +158,7 @@ section.header{
     width: 50px;
     background-color: #3971ff;
     height: 2px;
+    transition: all 0.3s ease 0.1s;
 }
 .link-btn:hover, .link-btn.active{
     text-decoration: none;
